@@ -5,6 +5,9 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,27 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d988b39-9f6a-4859-8967-a688434af88e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/google-services (1).json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/register/RegisterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/register/RegistrationUserActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/register/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_kolokol.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_mask_group.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/registration_user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-round/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,26 +186,30 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1639183943244" />
-    <state width="1491" height="200" key="GridCell.Tab.0.bottom" timestamp="1639189791895">
+    <state width="1491" height="200" key="GridCell.Tab.0.bottom" timestamp="1639191812311">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="200" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
-    <state width="1491" height="200" key="GridCell.Tab.0.center" timestamp="1639189791895">
+    <state width="1491" height="200" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1639191812311" />
+    <state width="1491" height="200" key="GridCell.Tab.0.center" timestamp="1639191812310">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="200" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
-    <state width="1491" height="200" key="GridCell.Tab.0.left" timestamp="1639189791895">
+    <state width="1491" height="200" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1639191812310" />
+    <state width="1491" height="200" key="GridCell.Tab.0.left" timestamp="1639191812310">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="200" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
-    <state width="1491" height="200" key="GridCell.Tab.0.right" timestamp="1639189791895">
+    <state width="1491" height="200" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1639191812310" />
+    <state width="1491" height="200" key="GridCell.Tab.0.right" timestamp="1639191812311">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="200" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
+    <state width="1491" height="200" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1639191812311" />
     <state x="207" y="10" key="SettingsEditor" timestamp="1639189494685">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1639166363045" />
     <state x="207" y="10" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1639189494685" />
+    <state x="471" y="217" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog" timestamp="1639190106450">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="471" y="217" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog/0.0.1536.816@0.0.1536.816" timestamp="1639190106450" />
   </component>
 </project>

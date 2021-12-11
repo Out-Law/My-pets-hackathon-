@@ -15,7 +15,7 @@
         android:theme="@style/Theme.MyPets">
         <uses-library
             android:name="com.google.android.wearable"
-            android:required="true" />
+            android:required="false" />
 
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
@@ -28,11 +28,6 @@
         <activity
             android:name=".register.RegistrationUserActivity"
             android:label="@string/title_activity_registration_user">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
