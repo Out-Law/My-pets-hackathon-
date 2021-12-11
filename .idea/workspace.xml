@@ -24,23 +24,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8278c0d-5fb8-4d50-87ec-f48e87559dfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_home_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6d988b39-9f6a-4859-8967-a688434af88e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/google-services (1).json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/register/RegisterUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/register/RegistrationUserActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/register/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_kolokol.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_mask_group.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/registration_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-round/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyPets/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyPets/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/toprograms/mypets/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[a75fd471]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -49,9 +61,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -59,15 +71,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2263w9POAWNWNdV609nEXOuH8m5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="a75fd471" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-12-11T02:25:14.435Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Android Studia/LearnProgrammingApp" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
@@ -84,7 +99,7 @@
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="-r -t" />
       <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
@@ -141,7 +156,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f8278c0d-5fb8-4d50-87ec-f48e87559dfa" name="Default Changelist" comment="" />
+      <changelist id="6d988b39-9f6a-4859-8967-a688434af88e" name="Default Changelist" comment="" />
       <created>1639144448203</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -159,23 +174,54 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639189770361">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1639189770361" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1639173257262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1639173257262" />
+    <state x="51" y="109" width="1350" height="630" key="AVDManager" timestamp="1639189702222">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="51" y="109" width="1350" height="630" key="AVDManager/0.0.1536.816@0.0.1536.816" timestamp="1639189702222" />
     <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog" timestamp="1639167186983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1639167186983" />
-    <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1639173638111">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="296" y="133" width="838" height="485" key="AndroidCreateResourceFileDialog" timestamp="1639182955644">
+      <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1639173638111" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1639166363045">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="296" y="133" width="838" height="485" key="AndroidCreateResourceFileDialog/0.0.1536.816@0.0.1536.816" timestamp="1639182955644" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1639183943244">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1639183943244" />
+    <state width="1491" height="200" key="GridCell.Tab.0.bottom" timestamp="1639189791895">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="200" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
+    <state width="1491" height="200" key="GridCell.Tab.0.center" timestamp="1639189791895">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="200" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
+    <state width="1491" height="200" key="GridCell.Tab.0.left" timestamp="1639189791895">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="200" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
+    <state width="1491" height="200" key="GridCell.Tab.0.right" timestamp="1639189791895">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="200" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1639189791895" />
+    <state x="207" y="10" key="SettingsEditor" timestamp="1639189494685">
+      <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1639166363045" />
+    <state x="207" y="10" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1639189494685" />
   </component>
 </project>

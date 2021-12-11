@@ -12,11 +12,12 @@
         android:layout_height="match_parent"></FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@drawable/shape"
         android:id="@+id/bottomNavigation"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu"
         android:layout_width="match_parent"
-        android:layout_height="50dp"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        android:layout_height="60dp"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </RelativeLayout>
