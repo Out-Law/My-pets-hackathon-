@@ -1,9 +1,9 @@
-package com.toprograms.mypets.register;
+package com.toprograms.mypets;
 
-class User {
+public class User {
     public  String fullName, passport, email;
 
-    public  User(){
+    public User(){
 
     }
 

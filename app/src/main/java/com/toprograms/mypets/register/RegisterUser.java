@@ -18,6 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.toprograms.mypets.R;
+import com.toprograms.mypets.User;
 
 
 public class RegisterUser extends AppCompatActivity implements View.OnClickListener{
@@ -31,7 +32,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_user);
+        setContentView(R.layout.registration_user);
 
         mAuth = FirebaseAuth.getInstance();
 

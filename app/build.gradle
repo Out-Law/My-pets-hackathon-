@@ -42,5 +42,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation platform('com.google.firebase:firebase-bom:29.0.1')
-    compileOnly 'com.google.android.wearable:wearable:2.6.0'
 }

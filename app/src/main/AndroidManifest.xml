@@ -25,17 +25,16 @@
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
 
-        <activity
-            android:name=".register.RegistrationUserActivity"
-            android:label="@string/title_activity_registration_user">
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ForgotPassword"/>
+        <activity android:name=".register.RegisterUser" />
+        <activity android:name=".register.RegistrationUserActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

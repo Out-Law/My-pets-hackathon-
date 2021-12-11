@@ -1,5 +1,6 @@
 package com.toprograms.mypets.register;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -16,129 +17,122 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
+import com.toprograms.mypets.ForgotPassword;
+import com.toprograms.mypets.MainActivity;
 import com.toprograms.mypets.R;
+import com.toprograms.mypets.User;
 
 public class RegistrationUserActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView registerUser;
-    private EditText editTextFullName, editTextPassport, editTextEmail, editTextPassword;
-    private ProgressBar progressBar;
+    private TextView register, forgotPassword;
+    private EditText editTextEmail, editTextPassword;
+    private Button signIn;
 
     private FirebaseAuth mAuth;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registration_user);
+        setContentView(R.layout.activity_register_user);
+
+        register = (TextView) findViewById(R.id.register);
+        register.setOnClickListener(this);
+
+        signIn = (Button) findViewById(R.id.signIn);
+        signIn.setOnClickListener(this);
+
+        editTextEmail = (EditText) findViewById(R.id.email);
+        editTextPassword = (EditText) findViewById(R.id.password);
+
+        forgotPassword = (TextView) findViewById(R.id.textForgotpassword);
+        forgotPassword.setOnClickListener(this);
 
         mAuth = FirebaseAuth.getInstance();
-
-        registerUser = (Button) findViewById(R.id.registerUser);
-        registerUser.setOnClickListener(this);
-
-        editTextFullName = (EditText) findViewById(R.id.editTextNameUserAuth);
-        editTextPassport = (EditText) findViewById(R.id.editTextPassport);
-        editTextEmail = (EditText) findViewById(R.id.editTextEmailAuth);
-        editTextPassword = (EditText) findViewById(R.id.editTextPasswordAuth);
-
-        progressBar = (ProgressBar) findViewById( R.id.progressBar);
     }
+
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.registerUser:
-                registerUser();
+        switch (v.getId()){
+            case R.id.register:
+                startActivity(new Intent(this, RegisterUser.class));
                 break;
 
+            case R.id.signIn:
+                userLogin();
+                break;
+
+            case R.id.textForgotpassword:
+                startActivity(new Intent(this, ForgotPassword.class));
         }
+
     }
 
-    private void registerUser() {
-
+    private void userLogin() {
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
-        String fullName = editTextFullName.getText().toString().trim();
-        String passport = editTextPassport.getText().toString().trim();
 
-        if(fullName.isEmpty()){
-            editTextFullName.setError("Full name is requried!");
-            editTextFullName.requestFocus();
-            return;
-        }
-
-        if(passport.isEmpty()){
-            editTextFullName.setError("Passport is requried!");
-            editTextFullName.requestFocus();
-            return;
-        }
-
-        if(email.isEmpty()){
-            editTextFullName.setError("Email name is requried!");
-            editTextFullName.requestFocus();
-            return;
-        }
-
-        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            editTextEmail.setError("Please provide valid email!");
+        if (email.isEmpty())
+        {
+            editTextEmail.setError("Email is required!");
             editTextEmail.requestFocus();
             return;
         }
 
-        if(password.isEmpty()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches())
+        {
+            editTextEmail.setError("Please enter a valid email!");
+            editTextEmail.requestFocus();
+            return;
+        }
+
+        if (password.isEmpty())
+        {
             editTextPassword.setError("Password is required!");
             editTextPassword.requestFocus();
             return;
         }
 
-        if(password.length() < 6){
-            editTextPassword.setError("Min password lenght should be 6 character");
+        if(password.length() < 6)
+        {
+            editTextPassword.setError("Min password length is 6 charters!");
             editTextPassword.requestFocus();
             return;
         }
 
-        progressBar.setVisibility(View.VISIBLE);
-        mAuth.createUserWithEmailAndPassword(email,password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        //  progressBar.setVisibility(View.VISIBLE);
+
+        mAuth.signInWithEmailAndPassword(email, password).
+                addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful())
+                        {
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-                        if(task.isSuccessful()){
-                            User user = new User(fullName, passport, email);
-
-                            FirebaseDatabase.getInstance().getReference("Users")
-                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-
-                                    if (task.isSuccessful()){
-                                        Toast.makeText(RegistrationUserActivity.this, "User has " +
-                                                "been registered succsessfull!", Toast.LENGTH_LONG)
-                                                .show();
-                                        progressBar.setVisibility(View.VISIBLE);
-                                    }
-                                    else
-                                    {
-                                        Toast.makeText(RegistrationUserActivity.this, "Failed to" +
-                                                "register! Try again!", Toast.LENGTH_LONG)
-                                                .show();
-                                        progressBar.setVisibility(View.GONE);
-                                    }
-                                }
-                            });
-
+                            if (user.isEmailVerified())
+                            {
+                                startActivity(new Intent(RegistrationUserActivity.this, MainActivity.class));
+                            }
+                            else
+                            {
+                                user.sendEmailVerification();
+                                Toast.makeText(RegistrationUserActivity.this, "Check your email to " +
+                                        "verify your account!", Toast.LENGTH_LONG).show();
+                            }
                         }
                         else
                         {
-                            Toast.makeText(RegistrationUserActivity.this, "Faild to register",
-                                    Toast.LENGTH_LONG)
-                                    .show();
-                            progressBar.setVisibility(View.GONE);
+                            Toast.makeText(RegistrationUserActivity.this, "Faild to login! " +
+                                    "Please check your credentials", Toast.LENGTH_LONG).show();
                         }
-
                     }
                 });
+
     }
+
+
 }
