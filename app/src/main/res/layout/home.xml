@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#9A6AFF"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FragmentAccount">
+    tools:context=".Home">
 
     <ScrollView
         android:id="@+id/ScrolViewSettings"
@@ -13,8 +13,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,82 +54,143 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewPeople"
-                android:layout_width="182dp"
-                android:layout_height="185dp"
-
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="7dp"
-                app:cardBackgroundColor="#D343145A"
-                app:cardCornerRadius="12dp"
+
+
+                app:cardCornerRadius="35dp"
                 app:cardElevation="7dp"
                 app:cardUseCompatPadding="true">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:foregroundGravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/ic_mask_group"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription" />
+                    android:id="@+id/image_view"
+                    android:layout_width="175dp"
+                    android:layout_height="184dp"
+                    android:background="@drawable/add_pet_img"></ImageView>
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/myImageViewText1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="Добавить питомца"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myImageViewText2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="left"
+                    android:text="Мы вам поможем"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/image_bottom_radius"
+                    android:clickable="true"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:tag="photos_btn"
+                    android:text="Добавить"
+
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewPeople"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/cardViewPets"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_alignParentLeft="true"
+                android:layout_gravity="top| right"
                 android:layout_marginLeft="7dp"
-                app:cardBackgroundColor="@color/btn_login_bg"
-                app:cardCornerRadius="22dp"
+                app:cardCornerRadius="35dp"
                 app:cardElevation="7dp"
                 app:cardUseCompatPadding="true">
-                >
+
+
+                <ImageView
+                    android:id="@+id/image_view2"
+                    android:layout_width="175dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/blog_img"></ImageView>
 
                 <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Добавить задачу"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="normal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />            </androidx.cardview.widget.CardView>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/myImageViewText"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="right"
+                    android:text="Блог"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myImageViewText2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="left"
+                    android:text="Мы вам поможем"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/image_bottom_radius"
+                    android:clickable="true"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:tag="photos_btn"
+                    android:text="Добавить"
+
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewStatistic"
                 android:layout_width="match_parent"
-                android:layout_height="700dp"
-                app:cardUseCompatPadding="true"
+                android:layout_height="800dp"
                 android:background="@drawable/shape"
-                app:cardElevation="7dp">
+                app:cardCornerRadius="19dp"
+                app:cardUseCompatPadding="true">
 
             </androidx.cardview.widget.CardView>
-
-
 
 
         </LinearLayout>
