@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Pets</string>
+    <string name="EMAIL">EMAIL</string>
+    <string name="PASSWORD">ПАРОЛЬ</string>
+    <string name="SIGN_IN">Войти в аккаунт</string>
+    <string name="REG">Зарегестрироваться</string>
+    <string name="FORGOT">Забыли пароль?</string>
+    <string name="FULLNAME">ФИО</string>
+</resources>
