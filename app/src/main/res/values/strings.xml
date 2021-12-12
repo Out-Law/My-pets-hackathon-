@@ -8,4 +8,8 @@
     <string name="FULLNAME">ФИО</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="zadachi">Задачи</string>
+    <string name="pet_2">Pet №2</string>
+    <string name="pet_1">Pet №1</string>
+    <string name="pet_3">pet 3</string>
 </resources>
