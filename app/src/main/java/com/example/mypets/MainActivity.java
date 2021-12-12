@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
                             if (user.isEmailVerified())
                             {
-                                //startActivity(new Intent(MainActivity.this, MainActivity.class));
+                                startActivity(new Intent(MainActivity.this, NavigationActivity.class));
                                 Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_LONG).show();
                             }
                             else

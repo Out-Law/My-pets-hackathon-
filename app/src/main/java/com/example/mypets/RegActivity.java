@@ -113,5 +113,8 @@ public class RegActivity extends AppCompatActivity {
                     }
                 });
         finish();
+        Toast.makeText(RegActivity.this, "The account is registered. Waiting for email confirmation.",
+                Toast.LENGTH_LONG)
+                .show();
     }
 }

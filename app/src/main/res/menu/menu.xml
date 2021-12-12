@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item1"
+        android:title="HOME"
+        android:icon="@drawable/ic_hom"
+        >
+
+    </item>
+    <item android:id="@+id/item2"
+        android:title="PETS"
+        android:icon="@drawable/ic_koala"
+        >
+
+    </item>
+    <item android:id="@+id/item3"
+        android:title="NOTE"
+        android:icon="@drawable/ic_note"
+        >
+
+    </item>
+    <item android:id="@+id/item4"
+        android:title="LOCATION"
+        android:icon="@drawable/ic_baseline_settings_24"
+        >
+
+    </item>
+</menu>
